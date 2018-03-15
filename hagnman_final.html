@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+<html lang="en-us">
+
+<head>
+  <meta charset="UTF-8">
+  <title>Hangman</title>
+  <link rel="stylesheet" href="style_final.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+      <div class="container"><center>
+        <h1>Hangman for Ice Cream Lovers</h1>
+        <h2> </h2>
+        <small>Click anywhere to begin...</small></center>
+      </div>
+
+
+    <!-- Game counters all held here. Panels are being used to hold various sections. -->
+    <div class="row">
+      <div class="col-lg-12">
+
+        
+          <div >
+            <h3 class="guessword"><strong><center>Guess the following ice cream flavor</center></strong></h3>
+          </div>
+          <div class="wordblanks"><center>
+            <h3 id="word-blanks">_ _ _ _ _ _ _ _ _ </h3></center>
+          </div>
+        
+
+        
+          <div class="mainbody"><center>
+            <strong>Letters Called: </strong> <span id="wrong-guesses"></span></center>
+          </div>
+          <div class="mainbody">   <center>      
+            <strong>Guesses Remaining: </strong> <span id="guesses-left">9</span></center>
+          </div>
+          <div class="mainbody"><center>
+            <strong>Wins: </strong> <span id="win-counter">0</span></center>
+          </div>
+          <div class="mainbody"><center>
+            <strong>Losses: </strong> <span id="loss-counter">0</span></center>
+          </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Adds a link to the javascript file. Loaded at the bottom so it waits for the HTML content to display first.
+	If you put this at the top it will crash, because the HTML IDs won't exist yet.-->
+  <script type="text/javascript" src="java_final.js"></script>
+</body>
+
+</html>
